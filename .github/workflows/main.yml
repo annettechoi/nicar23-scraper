@@ -15,7 +15,7 @@ jobs:
         python-version: '3.9'
     - run: pip install notebook requests bs4
     - name: Run scraper
-      run: jupyter execute scrapex.ipynb
+      run: jupyter execute scrape.ipynb
       
     - name: Add and commit
       id: add_commit
