@@ -31,7 +31,7 @@ jobs:
       env:
           INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
       with:
-          text: Scrape worked, but nothing new
+          text: Scrape worked, but nothing new :/
           
     - name: Slack Notification on FAILURE
       if: failure()
@@ -61,7 +61,7 @@ jobs:
       env:
         INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
       with:
-        text: Scrape worked, new files!
+        text: Cool, scrape worked, new files!
         attachments: |
             [
             {
